@@ -1,0 +1,27 @@
+bugs:
+- head-branch: ['^fix/', '^hotfix/']
+
+ci:
+- changed-files:
+  - any-glob-to-any-file: ['.github/**/*']
+- head-branch: ['^ci/']
+
+deps:
+- changed-files:
+  - any-glob-to-any-file: ['**/package.json', '**/pyproject.toml']
+- head-branch: ['^renovate/']
+
+docs:
+- changed-files:
+  - any-glob-to-any-file: ['**/README.md', '**/CHANGELOG.md']
+
+renovate:
+- head-branch: ['^renovate/']
+
+schemas:
+- changed-files:
+  - any-glob-to-any-file: ['schemas/**/*']
+
+tests:
+- changed-files:
+  - any-glob-to-any-file: ['tests/**/*']

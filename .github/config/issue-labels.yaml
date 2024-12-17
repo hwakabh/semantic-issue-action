@@ -1,0 +1,39 @@
+# Configurations of `github/issue-labeler` action
+# regexp patterns had basically been aligned for Conventional Commits and Semantic PR
+breaking:
+- '/(?!)/'
+
+bugs:
+- '(fix)'
+
+chore:
+- '(chore)'
+
+ci:
+- '(ci:|\(ci\))'
+
+deps:
+- '(deps|dependencies)'
+
+deploy:
+- '(build|deploy)'
+
+docs:
+- '(docs|document|diagram)'
+
+features:
+- '(feat)'
+
+schemas:
+- '(schema:|\(schema\))'
+
+security:
+- '(security)'
+
+tests:
+- '(test)'
+
+# Note that the following labels will have never been added by issue-labeler,
+# since only for PRs and will not raise issue
+# - renovate
+# - releases
