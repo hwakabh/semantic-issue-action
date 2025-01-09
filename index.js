@@ -15,14 +15,19 @@ try {
   const octokit = github.getOctokit(ghToken);
   console.log(`Fetching issues in repository ${targetRepo}`);
 
+  // Get the JSON webhook payload of issue for the event to validate title
+  const payload = JSON.stringify(github.context.payload, undefined, 2)
+  console.log(`The event payload: ${payload}`);
+
   // TODO: Fetch target issue object from action contexts (workflow triggers)
-  octokit.rest.issues.listForRepo({
+  octokit.rest.issues.get({
     owner: "hwakabh",
-    repo: "semantic-issue-action"
+    repo: "semantic-issue-action",
+    issue_number: payload.issue.number
   })
-  .then(issues => {
-    // console.log(issues.data);
-    issues.data.forEach(i => {
+  .then(issue => {
+    console.log(issue.data);
+    issue.data.forEach(i => {
       console.log(i.title);
       if (isSemantic(i.title)) {
         console.log('>>> Issue title is semantic');
@@ -35,10 +40,6 @@ try {
       }
     });
   })
-
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
 
 } catch (error) {
   core.setFailed(error.message);
