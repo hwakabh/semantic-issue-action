@@ -1,0 +1,18 @@
+# Ref for actions.yml
+# https://docs.github.com/en/actions/sharing-automations/creating-actions/metadata-syntax-for-github-actions
+# Ref for conventional commit
+# https://www.conventionalcommits.org/en/v1.0.0/
+
+name: 'Semantic Issue Actions'
+description: 'Check issues title with convensional commits format'
+inputs:
+  repo:  # id of input
+    description: 'Repository to enforce semantic issue'
+    required: true
+    default: 'hwakabh/semantic-issue-action'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'index.js'
