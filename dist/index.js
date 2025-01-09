@@ -32810,14 +32810,14 @@ try {
   console.log(`Fetching issues in repository ${targetRepo}`);
 
   // Get the JSON webhook payload of issue for the event to validate title
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  console.log("The event payload");
+  console.log(github.context.payload);
 
   octokit.rest.issues.get({
     // TODO: make dynamic (split from inputs)
     owner: "hwakabh",
     repo: "semantic-issue-action",
-    issue_number: payload.issue.number
+    issue_number: github.context.payload.issue.number
   })
   .then(issue => {
     console.log(issue.data);
