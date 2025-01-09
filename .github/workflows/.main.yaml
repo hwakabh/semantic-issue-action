@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Ref: https://github.com/googleapis/release-please/blob/main/docs/customizing.md#updating-arbitrary-files
+      # x-release-please-start-version
       - uses: hwakabh/semantic-issue-action@v0.0.1
+      # x-release-please-end
         with:
           repo: 'hwakabh/semantic-issue-action'
