@@ -6,7 +6,7 @@
         {
           "type": "yaml",
           "path": ".github/workflows/.main.yaml",
-          "jsonpath": "$.jobs.test-action.steps[1].uses"
+          "jsonpath": "$.jobs.validate.steps[1].uses"
         }
       ]
     }
