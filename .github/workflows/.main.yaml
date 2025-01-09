@@ -1,7 +1,8 @@
 name: Test semantic-issue-action
 
 on:
-  push:
+  issues:
+    types: [opened, edited, reopened]
   workflow_dispatch:
 
 jobs:
