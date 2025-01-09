@@ -4,8 +4,9 @@
       "release-type": "node",
       "extra-files": [
         {
-          "type": "generic",
-          "path": ".github/workflows/.main.yaml"
+          "type": "yaml",
+          "path": ".github/workflows/.main.yaml",
+          "jsonpath": "$.jobs.test-action.steps[1].uses"
         }
       ]
     }
