@@ -8,6 +8,10 @@ description: 'Check issues title with convensional commits format'
 author: 'hwakabh'
 
 inputs:
+  token:
+    description: 'GitHub Tokens for the actions'
+    required: true
+    default: ''
   repo:  # id of input
     description: 'Repository to enforce semantic issue'
     required: true
