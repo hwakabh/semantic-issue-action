@@ -1,6 +1,22 @@
 # Changelog
 
-## [0.1.0](https://github.com/hwakabh/semantic-issue-action/compare/semantic-issue-action-v0.0.1...semantic-issue-action-v0.1.0) (2025-01-09)
+## [0.2.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.1.0...v0.2.0) (2025-01-09)
+
+
+### Features
+
+* enabled to fetch lists of issue title. ([056b044](https://github.com/hwakabh/semantic-issue-action/commit/056b04463fb466825b97759340a8661f7bba9730))
+* fetched issue using proper octokit methods. ([cd9d970](https://github.com/hwakabh/semantic-issue-action/commit/cd9d9705c73e6577a4041d277a244257b1ff4df9))
+* implemented valildate title functions with @conventional-commits/parser. ([f638340](https://github.com/hwakabh/semantic-issue-action/commit/f6383401b9cf54400928a7474fd125f1a82dd1eb))
+* removed forEach() to get issue object from JSON webhooks. ([b67c0d3](https://github.com/hwakabh/semantic-issue-action/commit/b67c0d316b0530a43d91482fffbb2cb11f628acc))
+
+
+### Bug Fixes
+
+* **release-please:** tag versioning with removing component name. ([f503483](https://github.com/hwakabh/semantic-issue-action/commit/f5034836671c9252e5e127707e457039564133da))
+* removed JSON.stringfy() for fetching issue number. ([06b676f](https://github.com/hwakabh/semantic-issue-action/commit/06b676f43bd95f727a75cead9c5e1126e8c7cbe4))
+
+## [0.1.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.0.1...v0.1.0) (2025-01-09)
 
 
 ### Features
