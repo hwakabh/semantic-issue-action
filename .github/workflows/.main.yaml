@@ -1,6 +1,8 @@
-name: Test Actions
+name: Test semantic-issue-action
 
-on: push
+on:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   test-action:
@@ -10,3 +12,5 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: hwakabh/semantic-issue-action@v0.0.1
+        with:
+          repo: 'hwakabh/semantic-issue-action'

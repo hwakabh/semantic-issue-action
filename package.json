@@ -10,5 +10,9 @@
     "node": "20.9.0"
   },
   "author": "hwakabh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  }
 }
