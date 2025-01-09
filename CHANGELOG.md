@@ -16,7 +16,7 @@
 * **release-please:** tag versioning with removing component name. ([f503483](https://github.com/hwakabh/semantic-issue-action/commit/f5034836671c9252e5e127707e457039564133da))
 * removed JSON.stringfy() for fetching issue number. ([06b676f](https://github.com/hwakabh/semantic-issue-action/commit/06b676f43bd95f727a75cead9c5e1126e8c7cbe4))
 
-## [0.1.0](https://github.com/hwakabh/semantic-issue-action/compare/semantic-issue-action-v0.0.1...semantic-issue-action-v0.1.0) (2025-01-09)
+## [0.1.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.0.1...v0.1.0) (2025-01-09)
 
 
 ### Features
