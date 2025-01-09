@@ -5,14 +5,19 @@
 
 name: 'Semantic Issue Actions'
 description: 'Check issues title with convensional commits format'
+author: 'hwakabh'
+
 inputs:
   repo:  # id of input
     description: 'Repository to enforce semantic issue'
     required: true
     default: 'hwakabh/semantic-issue-action'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  check-result: # id of output
+    description: 'Results of checking following the specs or not'
 runs:
   using: 'node20'
   main: 'index.js'
+branding:
+  icon: 'github'
+  color: 'green'
