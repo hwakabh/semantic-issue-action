@@ -31819,9 +31819,24 @@ console.log("Starting actions: @hwakabh/semantic-issue-action")
 try {
   // Fetch input values from action-metadata using `use.with` statement
   const targetRepo = core.getInput('repo');
-  console.log(`Checking issue title(s) in repository ${targetRepo}`);
-
   // TODO: validate string of repo (owner/reponame)
+
+  const ghToken = core.getInput('token');
+  const octokit = github.getOctokit(ghToken);
+
+  console.log(`Fetching issues in repository ${targetRepo}`);
+  octokit.rest.issues.listForRepo({
+    owner: "hwakabh",
+    repo: "semantic-issue-action"
+  })
+  .then(issues => {
+    // console.log(issues.data);
+    issues.data.forEach(i => {
+      console.log(i.title);
+    });
+  })
+
+
 
   // define returns of actions
   const result = "https://github.com/" + targetRepo;
