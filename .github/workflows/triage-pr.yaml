@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  triage_pr:
+  triage-pr:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout

@@ -2,7 +2,10 @@ name: Test semantic-issue-action
 
 on:
   issues:
-    types: [opened, edited, reopened]
+    types:
+      - opened
+      - edited
+      - reopened
   workflow_dispatch:
 
 jobs:
@@ -10,9 +13,11 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: ./
+      - name: Test hwakabh/semantic-issue-action
+        uses: ./
         with:
           repo: 'hwakabh/semantic-issue-action'
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  triage_issue:
+  triage-issue:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
