@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: hwakabh/semantic-issue-action@v0.0.1
+      - uses: hwakabh/semantic-issue-action@v0.1.0
         with:
           repo: 'hwakabh/semantic-issue-action'
