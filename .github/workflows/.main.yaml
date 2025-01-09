@@ -1,7 +1,7 @@
-name: Test Actions
+name: Test semantic-issue-action
 
 on:
-  pull_requests:
+  pull_request:
   workflow_dispatch:
 
 jobs:
