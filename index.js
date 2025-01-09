@@ -9,15 +9,17 @@ try {
   const targetRepo = core.getInput('repo');
   const ghToken = core.getInput('token');
 
-  // TODO: validate string of repo (owner/reponame)
+  if (targetRepo.split('/').length != 2) {
+    core.setFailed("Invalid format in input with [repo], make sure the value of repo is [owner/reponame]")
+  }
   // TODO: validate existence of repo in github.com
 
   const octokit = github.getOctokit(ghToken);
   console.log(`Fetching issues in repository ${targetRepo}`);
 
   // Get the JSON webhook payload of issue for the event to validate title
-  console.log("The event payload");
-  console.log(github.context.payload);
+  core.debug("The event payload below:");
+  core.debug(github.context.payload);
 
   octokit.rest.issues.get({
     // TODO: make dynamic (split from inputs)
