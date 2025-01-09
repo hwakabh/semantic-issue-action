@@ -17,7 +17,7 @@ outputs:
     description: 'Results of checking following the specs or not'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
 branding:
   icon: 'github'
   color: 'green'
