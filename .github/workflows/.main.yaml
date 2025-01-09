@@ -10,3 +10,5 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: hwakabh/semantic-issue-action@v0.0.1
+        with:
+          repo: 'hwakabh/semantic-issue-action'
