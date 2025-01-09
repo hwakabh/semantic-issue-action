@@ -11,7 +11,7 @@ inputs:
   token:
     description: 'GitHub Tokens for the actions'
     required: true
-    default: ''
+    default: ${{ github.token }}
   repo:  # id of input
     description: 'Repository to enforce semantic issue'
     required: true
