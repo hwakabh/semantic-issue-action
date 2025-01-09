@@ -1,0 +1,12 @@
+name: Test Actions
+
+on: push
+
+jobs:
+  test-action:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hwakabh/semantic-issue-action@v0.0.1
