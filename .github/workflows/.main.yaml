@@ -1,6 +1,8 @@
 name: Test Actions
 
-on: push
+on:
+  pull_requests:
+  workflow_dispatch:
 
 jobs:
   test-action:
