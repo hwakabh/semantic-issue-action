@@ -32850,21 +32850,35 @@ async function run() {
       } else {
         console.log(issue.data.title);
         if (isSemantic(issue.data.title)) {
-          core.setOutput("check-result", true);
+          core.saveState("result", true);
           console.log('Issue title is semantic, nothing to do');
         } else {
-          core.setOutput("check-result", false);
+          core.saveState("result", false);
           console.log(`The title of issue #${issue.data.number} is not aligned conventional-commits, will post comment.`);
-
-          // TODO: post comments to the issue
         }
       }
     });
-
   } catch (error) {
     core.setFailed(error.message);
   }
 
+  // TODO: post comments to the issue
+  try {
+    octokit.rest.issues.createComment({
+      owner: targetRepo.split('/')[0],
+      repo: targetRepo.split('/')[1],
+      issue_number: github.context.payload.issue.number,
+      body: "test comment"
+    });
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+
+  if (core.getState('result')) {
+    core.setOutput("check-result", true);
+  } else {
+    core.setOutput("check-result", false);
+  }
 }
 
 

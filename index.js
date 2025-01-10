@@ -41,13 +41,14 @@ async function run() {
 
     // Get the JSON webhook payload of issue for the event to validate title
     console.log(`Fetching issues in repository ${targetRepo}`);
+    const ctx = github.context.payload;
     core.debug("The event payload below:");
-    core.debug(github.context.payload);
+    core.debug(ctx);
 
     octokit.rest.issues.get({
       owner: targetRepo.split('/')[0],
       repo: targetRepo.split('/')[1],
-      issue_number: github.context.payload.issue.number
+      issue_number: ctx.issue.number
     })
     .then(issue => {
       console.log(issue.data);
@@ -56,21 +57,35 @@ async function run() {
       } else {
         console.log(issue.data.title);
         if (isSemantic(issue.data.title)) {
-          core.setOutput("check-result", true);
+          core.saveState("result", true);
           console.log('Issue title is semantic, nothing to do');
         } else {
-          core.setOutput("check-result", false);
+          core.saveState("result", false);
           console.log(`The title of issue #${issue.data.number} is not aligned conventional-commits, will post comment.`);
-
-          // TODO: post comments to the issue
         }
       }
     });
-
   } catch (error) {
     core.setFailed(error.message);
   }
 
+  // Post comments to the issue if not semantic
+  if (core.getState('result')) {
+    core.setOutput("check-result", true);
+  } else {
+    core.setOutput("check-result", false);
+    console.log('Title of issue is not aligned with conventional-commits spec, will post comment to the issue.');
+    try {
+      octokit.rest.issues.createComment({
+        owner: targetRepo.split('/')[0],
+        repo: targetRepo.split('/')[1],
+        issue_number: ctx.issue.number,
+        body: "test comment"
+      });
+    } catch (error) {
+      core.setFailed(error.message);
+    }
+  }
 }
 
 
