@@ -32845,7 +32845,7 @@ async function run() {
   })
   .then(issue => {
     console.log(issue.data);
-    if (issue.data.state != 'open') {
+    if (issue.data.state === 'open') {
       console.log(issue.data.title);
       if (isSemantic(issue.data.title) != true) {
         // Post comments to the issue if not semantic
