@@ -51,11 +51,9 @@ async function run() {
   })
   .then(issue => {
     console.log(issue.data);
-    if (issue.data.state != 'open') {
-      console.log(`Target issue #${issue.data.number} has been already closed, nothing to do.`);
-    } else {
+    if (issue.data.state === 'open') {
       console.log(issue.data.title);
-      if (isSemantic(issue.data.title)) {
+      if (isSemantic(issue.data.title) === true) {
         core.setOutput("check-result", true);
         console.log('Issue title is semantic, nothing to do');
       } else {
@@ -70,10 +68,11 @@ async function run() {
         })
         .catch(e => {
           core.debug(e);
-          core.setFailed(`Failed to posting comment in issue ${ctx.issue.number}`);
+          core.setFailed(`Failed to posting comment in issue ${issue.data.number}.`);
         });
-
       }
+    } else {
+      console.log(`Target issue #${issue.data.number} has been already closed, nothing to do.`);
     }
   })
   .catch(e => {
