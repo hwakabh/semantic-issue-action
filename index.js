@@ -51,12 +51,9 @@ async function run() {
   })
   .then(issue => {
     console.log(issue.data);
-    if (issue.data.state === 'open') {
+    if (issue.data.state != 'open') {
       console.log(issue.data.title);
-      if (isSemantic(issue.data.title) === true) {
-        core.setOutput("check-result", true);
-        console.log('Issue title is semantic, nothing to do');
-      } else {
+      if (isSemantic(issue.data.title) != true) {
         // Post comments to the issue if not semantic
         core.setOutput("check-result", false);
         console.log(`The title of issue #${issue.data.number} is not aligned conventional-commits, will post comment.`);
@@ -70,6 +67,9 @@ async function run() {
           core.debug(e);
           core.setFailed(`Failed to posting comment in issue ${issue.data.number}.`);
         });
+      } else {
+        core.setOutput("check-result", true);
+        console.log('Issue title is semantic, nothing to do');
       }
     } else {
       console.log(`Target issue #${issue.data.number} has been already closed, nothing to do.`);
@@ -79,6 +79,7 @@ async function run() {
     core.debug(e);
     core.setFailed(`Failed to fetch issue number from JSON webhook context.`);
   });
+
 }
 
 
