@@ -32846,16 +32846,27 @@ async function run() {
   .then(issue => {
     console.log(issue.data);
     if (issue.data.state != 'open') {
-      console.log(`Target issue #${issue.data.number} has been already closed, nothing to do.`);
-    } else {
       console.log(issue.data.title);
-      if (isSemantic(issue.data.title)) {
-        core.saveState("result", true);
-        console.log('Issue title is semantic, nothing to do');
-      } else {
-        core.saveState("result", false);
+      if (isSemantic(issue.data.title) != true) {
+        // Post comments to the issue if not semantic
+        core.setOutput("check-result", false);
         console.log(`The title of issue #${issue.data.number} is not aligned conventional-commits, will post comment.`);
+        octokit.rest.issues.createComment({
+          owner: targetRepo.split('/')[0],
+          repo: targetRepo.split('/')[1],
+          issue_number: ctx.issue.number,
+          body: "test comment"
+        })
+        .catch(e => {
+          core.debug(e);
+          core.setFailed(`Failed to posting comment in issue ${issue.data.number}.`);
+        });
+      } else {
+        core.setOutput("check-result", true);
+        console.log('Issue title is semantic, nothing to do');
       }
+    } else {
+      console.log(`Target issue #${issue.data.number} has been already closed, nothing to do.`);
     }
   })
   .catch(e => {
@@ -32863,23 +32874,6 @@ async function run() {
     core.setFailed(`Failed to fetch issue number from JSON webhook context.`);
   });
 
-  // Post comments to the issue if not semantic
-  if (core.getState('result')) {
-    core.setOutput("check-result", true);
-  } else {
-    core.setOutput("check-result", false);
-    console.log('Title of issue is not aligned with conventional-commits spec, will post comment to the issue.');
-    await octokit.rest.issues.createComment({
-      owner: targetRepo.split('/')[0],
-      repo: targetRepo.split('/')[1],
-      issue_number: ctx.issue.number,
-      body: "test comment"
-    })
-    .catch(e => {
-      core.debug(e);
-      core.setFailed(`Failed to posting comment in issue ${ctx.issue.number}`);
-    });
-  }
 }
 
 
