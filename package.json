@@ -1,6 +1,6 @@
 {
   "name": "semantic-issue-action",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "JavaScript GitHub Actions for Semantic Issue",
   "main": "index.js",
   "scripts": {
