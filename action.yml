@@ -8,14 +8,18 @@ description: 'Check issues title with convensional commits format'
 author: 'hwakabh'
 
 inputs:
-  token:
+  token: # id of input
     description: 'GitHub Tokens for the actions'
     required: true
     default: ${{ github.token }}
-  repo:  # id of input
+  repo:
     description: 'Repository to enforce semantic issue'
     required: true
     default: 'hwakabh/semantic-issue-action'
+  body:
+    description: 'Message body to comment if title is not semantic'
+    required: false
+    default: 'The issue title is not aligned to conventional-commits specs, please consider to resolve.'
 outputs:
   check-result: # id of output
     description: 'Results of checking following the specs or not'
