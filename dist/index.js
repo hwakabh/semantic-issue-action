@@ -32801,6 +32801,7 @@ async function run() {
   // Fetch input values from action-metadata using `use.with` statement
   const targetRepo = core.getInput('repo');
   const ghToken = core.getInput('token');
+  const messageBody = core.getInput('body');
   const octokit = github.getOctokit(ghToken);
 
   // valiate input format
@@ -32855,7 +32856,7 @@ async function run() {
           owner: targetRepo.split('/')[0],
           repo: targetRepo.split('/')[1],
           issue_number: ctx.issue.number,
-          body: "test comment"
+          body: messageBody
         })
         .catch(e => {
           core.debug(e);
