@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.2.0...v0.3.0) (2025-01-12)
+
+
+### Features
+
+* added functions to post comment. ([dd7b27b](https://github.com/hwakabh/semantic-issue-action/commit/dd7b27bce338f2eea827ac34f03b16db9e3bd33c))
+* added minimal validations for input. ([0c1141e](https://github.com/hwakabh/semantic-issue-action/commit/0c1141ec1286c4561069a4a4522d3a22b41ddd9a))
+* added validations for repo input. ([74ba35f](https://github.com/hwakabh/semantic-issue-action/commit/74ba35f427fa5e26d623802d356ad92bf906e6e3))
+* enabled to change comment body to be commented. ([d3091e7](https://github.com/hwakabh/semantic-issue-action/commit/d3091e78dc5e5959e352b59cae79618cd3e87a8c))
+
+
+### Bug Fixes
+
+* issue status for validation. ([de14437](https://github.com/hwakabh/semantic-issue-action/commit/de14437b1733eaafb24982d81219cbbb43ae936f))
+* removed state-controls and simplified logics. ([09d2059](https://github.com/hwakabh/semantic-issue-action/commit/09d20598d92849bf1713151b3bb117dfb0de4e98))
+* swapped logics between if-else and used strictly true/false. ([b53f9b6](https://github.com/hwakabh/semantic-issue-action/commit/b53f9b62fea6a38b5cfd0318fc294a92421f7a07))
+* updated end logics with async functions. ([4ba56fd](https://github.com/hwakabh/semantic-issue-action/commit/4ba56fd51a1e2ae1b23eaa75a720ede0716b03c5))
+
 ## [0.2.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.1.0...v0.2.0) (2025-01-09)
 
 
