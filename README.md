@@ -85,5 +85,5 @@ Please refer [the docs](https://nektosact.com/introduction.html) for more detail
 
 ## Credits
 Implemenation references on:
-- [`semantic-pull-requests`](https://github.com/zeke/semantic-pull-requests) (GitHub Apps) created by @zeke
-- [`semantic-prs`](https://github.com/Ezard/semantic-prs/tree/master) created by @Ezard
+- [`semantic-pull-requests`](https://github.com/zeke/semantic-pull-requests) (GitHub Apps) created by [@zeke](https://github.com/zeke)
+- [`semantic-prs`](https://github.com/Ezard/semantic-prs/tree/master) created by [@Ezard](https://github.com/Ezard)
