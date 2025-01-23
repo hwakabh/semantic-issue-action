@@ -20,7 +20,7 @@ jobs:
   semantic-issue:
     steps:
       - name: Check Issue Title
-        uses: hwakabh/semantic-issue-action@v0.3.0
+        uses: hwakabh/semantic-issue-action@v0.4.0
 ```
 
 The validations for issue title will be called, depending on the workflow event configurations in `on.issues` field, where the issue status will be not closed. \
