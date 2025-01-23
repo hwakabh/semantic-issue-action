@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.3.0...v0.4.0) (2025-01-23)
+
+
+### Features
+
+* **deps:** added npm scripts to run @vercel/ncc. ([72a7183](https://github.com/hwakabh/semantic-issue-action/commit/72a71831467f85e79415768a22101b5fdaed6716))
+* set issue details as debug message. ([768205b](https://github.com/hwakabh/semantic-issue-action/commit/768205b237db3d54df2f96d8fbafc8458c228714))
+
 ## [0.3.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.2.0...v0.3.0) (2025-01-12)
 
 
