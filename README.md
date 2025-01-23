@@ -42,7 +42,7 @@ Example contexts for enabling title validations of this repository (`hwakabh/sem
 ```yaml
     steps:
       - name: Check Issue Title
-        uses: hwakabh/semantic-issue-action@v0.3.0
+        uses: hwakabh/semantic-issue-action@v0.4.0
         with:
           repo: "hwakabh/semantic-issue-action"
           token: "${{ secrets.GITHUB_TOKEN }}"
@@ -66,7 +66,7 @@ See more about [the related comments](https://github.com/actions/runner/issues/1
 ```yaml
     steps:
     - id: check-issue-title
-      uses: hwakabh/semantic-issue-action@0.0.3
+      uses: hwakabh/semantic-issue-action@0.4.0
 
     - if: steps.check-issue-title.outputs.check-result == 'true'
       run: |
