@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.4.0...v0.4.1) (2025-01-23)
+
+
+### Bug Fixes
+
+* **docs:** updated versions in example usage. ([10c0991](https://github.com/hwakabh/semantic-issue-action/commit/10c0991dd1c47abe013bfaddbb7c7daa6c63428b))
+
 ## [0.4.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.3.0...v0.4.0) (2025-01-23)
 
 
