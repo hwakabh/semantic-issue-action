@@ -51,7 +51,7 @@ async function run() {
     issue_number: ctx.issue.number
   })
   .then(issue => {
-    console.log(issue.data);
+    core.debug(issue.data);
     if (issue.data.state === 'open') {
       console.log(issue.data.title);
       if (isSemantic(issue.data.title) != true) {
