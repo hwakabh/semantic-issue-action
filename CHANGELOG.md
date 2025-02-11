@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.4.1...v0.5.0) (2025-02-11)
+
+
+### Features
+
+* added typescript for project. ([32ef359](https://github.com/hwakabh/semantic-issue-action/commit/32ef3595622ffbded94eb3f5c8a89e2226ee9889))
+* made type check strict. ([df0f793](https://github.com/hwakabh/semantic-issue-action/commit/df0f79349649e42403c098ca5b99500349d995ca))
+
 ## [0.4.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.4.0...v0.4.1) (2025-01-23)
 
 
