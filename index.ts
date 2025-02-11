@@ -1,12 +1,14 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
+import * as core from '@actions/core';
+import * as github from '@actions/github'
+import { WebhookPayload } from '@actions/github/lib/interfaces';
+
 const { parser, toConventionalChangelogFormat } = require('@conventional-commits/parser');
 
 
 async function run() {
   // Fetch input values from action-metadata using `use.with` statement
-  const targetRepo = core.getInput('repo');
-  const ghToken = core.getInput('token');
+  const targetRepo: string = core.getInput('repo');
+  const ghToken: string = core.getInput('token');
   const messageBody = core.getInput('body');
   const octokit = github.getOctokit(ghToken);
 
@@ -31,7 +33,7 @@ async function run() {
     name: targetRepo.split('/')[1]
   })
   .then(r => {
-    core.debug(r);
+    core.debug(r as any);
   })
   .catch(e => {
     core.debug(e);
@@ -41,9 +43,9 @@ async function run() {
 
   // Get the JSON webhook payload of issue for the event to validate title
   console.log(`Fetching issues in repository ${targetRepo}`);
-  const ctx = github.context.payload;
+  const ctx: WebhookPayload = github.context.payload;
   core.debug("The event payload below:");
-  core.debug(ctx);
+  core.debug(ctx as any);
 
   await octokit.rest.issues.get({
     owner: targetRepo.split('/')[0],
@@ -51,7 +53,7 @@ async function run() {
     issue_number: ctx.issue.number
   })
   .then(issue => {
-    core.debug(issue.data);
+    core.debug(issue.data as any);
     if (issue.data.state === 'open') {
       console.log(issue.data.title);
       if (isSemantic(issue.data.title) != true) {
