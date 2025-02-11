@@ -35,7 +35,7 @@ async function run() {
   })
   .catch(e => {
     core.debug(e);
-    core.setFailed(`Repository [ ${repo} ] not exists, check the value of repo.`);
+    core.setFailed(`Repository [ ${targetRepo} ] not exists, check the value of repo.`);
   });
 
 
