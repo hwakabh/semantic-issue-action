@@ -2,14 +2,13 @@ import * as core from '@actions/core';
 import * as github from '@actions/github'
 import { WebhookPayload } from '@actions/github/lib/interfaces';
 
-const { parser, toConventionalChangelogFormat } = require('@conventional-commits/parser');
-
+import { ConventionalChangelogCommit, Message, parser, toConventionalChangelogFormat } from '@conventional-commits/parser';
 
 async function run() {
   // Fetch input values from action-metadata using `use.with` statement
   const targetRepo: string = core.getInput('repo');
   const ghToken: string = core.getInput('token');
-  const messageBody = core.getInput('body');
+  const messageBody: string = core.getInput('body');
   const octokit = github.getOctokit(ghToken);
 
   // valiate input format
@@ -86,11 +85,11 @@ async function run() {
 }
 
 
-function isSemantic(issueTitle) {
+function isSemantic(issueTitle: string): boolean {
   try {
-    const ast = parser(issueTitle);
-    const commits = toConventionalChangelogFormat(ast);
-    core.debug(commits)
+    const ast: Message = parser(issueTitle);
+    const commits: ConventionalChangelogCommit = toConventionalChangelogFormat(ast);
+    core.debug(commits as any)
     return true
   } catch {
     return false
