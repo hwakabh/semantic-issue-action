@@ -1,13 +1,14 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const { parser, toConventionalChangelogFormat } = require('@conventional-commits/parser');
+import * as core from '@actions/core';
+import * as github from '@actions/github'
+import { WebhookPayload } from '@actions/github/lib/interfaces';
 
+import { ConventionalChangelogCommit, Message, parser, toConventionalChangelogFormat } from '@conventional-commits/parser';
 
 async function run() {
   // Fetch input values from action-metadata using `use.with` statement
-  const targetRepo = core.getInput('repo');
-  const ghToken = core.getInput('token');
-  const messageBody = core.getInput('body');
+  const targetRepo: string = core.getInput('repo');
+  const ghToken: string = core.getInput('token');
+  const messageBody: string = core.getInput('body');
   const octokit = github.getOctokit(ghToken);
 
   // valiate input format
@@ -31,19 +32,19 @@ async function run() {
     name: targetRepo.split('/')[1]
   })
   .then(r => {
-    core.debug(r);
+    core.debug(r as any);
   })
   .catch(e => {
     core.debug(e);
-    core.setFailed(`Repository [ ${repo} ] not exists, check the value of repo.`);
+    core.setFailed(`Repository [ ${targetRepo} ] not exists, check the value of repo.`);
   });
 
 
   // Get the JSON webhook payload of issue for the event to validate title
   console.log(`Fetching issues in repository ${targetRepo}`);
-  const ctx = github.context.payload;
+  const ctx: WebhookPayload = github.context.payload;
   core.debug("The event payload below:");
-  core.debug(ctx);
+  core.debug(ctx as any);
 
   await octokit.rest.issues.get({
     owner: targetRepo.split('/')[0],
@@ -51,7 +52,7 @@ async function run() {
     issue_number: ctx.issue.number
   })
   .then(issue => {
-    core.debug(issue.data);
+    core.debug(issue.data as any);
     if (issue.data.state === 'open') {
       console.log(issue.data.title);
       if (isSemantic(issue.data.title) != true) {
@@ -84,11 +85,11 @@ async function run() {
 }
 
 
-function isSemantic(issueTitle) {
+function isSemantic(issueTitle: string): boolean {
   try {
-    const ast = parser(issueTitle);
-    const commits = toConventionalChangelogFormat(ast);
-    core.debug(commits)
+    const ast: Message = parser(issueTitle);
+    const commits: ConventionalChangelogCommit = toConventionalChangelogFormat(ast);
+    core.debug(commits as any)
     return true
   } catch {
     return false
