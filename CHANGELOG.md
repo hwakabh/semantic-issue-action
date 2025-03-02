@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.0...v0.5.1) (2025-03-02)
+
+
+### Other Changes
+
+* **ci:** enhanced release-please configs. ([faca48d](https://github.com/hwakabh/semantic-issue-action/commit/faca48df83f0ccdf9c831a3714e2b958e92ef863))
+* **deps:** bump the npm_and_yarn group across 1 directory with 2 updates ([2c4b26c](https://github.com/hwakabh/semantic-issue-action/commit/2c4b26c0a2635f96b0706d533b628f7fc5d7b573))
+* **deps:** bump the npm_and_yarn group across 1 directory with 2 updates ([83635f9](https://github.com/hwakabh/semantic-issue-action/commit/83635f98b5872344a88e7b1102d00b8e4f9dbe35))
+* **deps:** update all non-major dependencies ([d9daee2](https://github.com/hwakabh/semantic-issue-action/commit/d9daee23023bdefde0f0d12f60b6a5b24ad8c5c3))
+* **deps:** update all non-major dependencies ([58811af](https://github.com/hwakabh/semantic-issue-action/commit/58811af7815a76b76242b456d4dd3a861015ea1c))
+
 ## [0.5.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.4.1...v0.5.0) (2025-02-11)
 
 
