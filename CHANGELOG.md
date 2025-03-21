@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.1...v0.5.2) (2025-03-21)
+
+
+### Other Changes
+
+* **deps:** update dependency @types/node to ^22.13.10 ([5e6a3cd](https://github.com/hwakabh/semantic-issue-action/commit/5e6a3cd4c79b6408bcaea90d047e5fa8c5ed03ad))
+* **deps:** update node.js to v20.19.0 ([9585a9f](https://github.com/hwakabh/semantic-issue-action/commit/9585a9fff223bd574a5513421066d151881377e1))
+
 ## [0.5.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.0...v0.5.1) (2025-03-02)
 
 
