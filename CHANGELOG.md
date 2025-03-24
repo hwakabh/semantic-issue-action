@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.2...v0.5.3) (2025-03-24)
+
+
+### Other Changes
+
+* **deps:** update dependency @types/node to ^22.13.12 ([2f8921d](https://github.com/hwakabh/semantic-issue-action/commit/2f8921d0394b523b36f5a536ae0ed70cf3c3f4a8))
+
 ## [0.5.2](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.1...v0.5.2) (2025-03-21)
 
 
