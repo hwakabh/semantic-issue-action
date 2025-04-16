@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.5](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.4...v0.5.5) (2025-04-15)
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([08faa80](https://github.com/hwakabh/semantic-issue-action/commit/08faa806cc59aa3060ccea002aa2b58463c5d55c))
+
 ## [0.5.4](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.3...v0.5.4) (2025-04-02)
 
 
