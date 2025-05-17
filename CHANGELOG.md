@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.8](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.7...v0.5.8) (2025-05-17)
+
+
+### Other Changes
+
+* **deps:** bump undici in the npm_and_yarn group across 1 directory ([73ea04f](https://github.com/hwakabh/semantic-issue-action/commit/73ea04f51d3834e174959cbd4cd0347388e00471))
+
 ## [0.5.7](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.6...v0.5.7) (2025-05-13)
 
 
