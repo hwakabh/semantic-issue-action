@@ -18,7 +18,7 @@
     "@conventional-commits/parser": "^0.4.1"
   },
   "devDependencies": {
-    "@types/node": "^22.15.21",
+    "@types/node": "^22.15.31",
     "@vercel/ncc": "^0.38.3",
     "typescript": "^5.8.3"
   }
