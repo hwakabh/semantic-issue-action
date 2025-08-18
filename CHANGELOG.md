@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.11](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.10...v0.5.11) (2025-08-18)
+
+
+### Other Changes
+
+* **deps:** update actions/checkout action to v5 ([e0301a3](https://github.com/hwakabh/semantic-issue-action/commit/e0301a388e53058f40a35bd4d6d9aa8c28cae84c))
+* **deps:** update all non-major dependencies ([c941882](https://github.com/hwakabh/semantic-issue-action/commit/c941882b09f146a8f91263632f1321eadb708893))
+
 ## [0.5.10](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.9...v0.5.10) (2025-06-15)
 
 
