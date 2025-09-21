@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.12](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.11...v0.5.12) (2025-09-21)
+
+
+### Other Changes
+
+* **deps:** update actions/labeler action to v6 ([45e1d32](https://github.com/hwakabh/semantic-issue-action/commit/45e1d320464794c412bc61c0fe76f8abe6be2242))
+* **deps:** update actions/stale action to v10 ([5e4fe37](https://github.com/hwakabh/semantic-issue-action/commit/5e4fe37ada10adc8e331bdb387d6f75c5570d71b))
+* **deps:** update all non-major dependencies ([9ff2095](https://github.com/hwakabh/semantic-issue-action/commit/9ff2095b04ba9e24ad3ba388f981d85ebbacaabf))
+
 ## [0.5.11](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.10...v0.5.11) (2025-08-18)
 
 
