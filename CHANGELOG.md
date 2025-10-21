@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.12...v0.6.0) (2025-10-21)
+
+
+### Features
+
+* upgraded Node.js version from 20 to 24 ([6e45596](https://github.com/hwakabh/semantic-issue-action/commit/6e45596669b0b7daea1ec4b1b8602c4954e50e2d))
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([3058fbb](https://github.com/hwakabh/semantic-issue-action/commit/3058fbb328301ec29012ce7f4d46ed6a0ce8dbd2))
+* **deps:** update node.js to v22 ([e22c9d2](https://github.com/hwakabh/semantic-issue-action/commit/e22c9d248b172fb9ff37b505e4f444516f8cb925))
+
 ## [0.5.12](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.11...v0.5.12) (2025-09-21)
 
 
