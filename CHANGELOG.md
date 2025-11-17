@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.6.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.0...v0.6.1) (2025-11-17)
+
+
+### Bug Fixes
+
+* add issue permission to release-please workflow ([5c6fa6a](https://github.com/hwakabh/semantic-issue-action/commit/5c6fa6addaee54145aa7cbdd4562f3e9b37d595c))
+* add issue permission to release-please workflow ([bbba8bd](https://github.com/hwakabh/semantic-issue-action/commit/bbba8bd3d7711790f1e21af57df9cf010b61a202))
+* **ci:** update action reference in release-please workflow ([2218a28](https://github.com/hwakabh/semantic-issue-action/commit/2218a28b2fcfdfe05153ed57183fd207e2ecce3d))
+* **ci:** update action reference in release-please workflow ([1fb0564](https://github.com/hwakabh/semantic-issue-action/commit/1fb05647f6a350934a223de1be7665c8b5babdab))
+* typo ([fa2418a](https://github.com/hwakabh/semantic-issue-action/commit/fa2418aa74a83c147c8d84a8d99789146ae4cb6f))
+* updated PAT instead of default github_token. ([7236a06](https://github.com/hwakabh/semantic-issue-action/commit/7236a06583a2475cc97cb560c83f25525213caa5))
+* updated PAT instead of default github_token. ([236bc1c](https://github.com/hwakabh/semantic-issue-action/commit/236bc1cfb290c5eca2f86cf0b303d8aba51eded3))
+
+
+### Documentation
+
+* updated description to use 'main' branch ([a9575a5](https://github.com/hwakabh/semantic-issue-action/commit/a9575a52ad64699eaae7a6a3872bf71bd981ca8b))
+
+
+### Continuous Integration
+
+* added GitHub Actions workflow for syncing commit diffs ([83c938e](https://github.com/hwakabh/semantic-issue-action/commit/83c938ee6b6985b739f9946ec44b665d1d83cfb6))
+* enhance PR template with commit and context sections ([ec8fba0](https://github.com/hwakabh/semantic-issue-action/commit/ec8fba05a4805372ceaa0f4fe12d212b9276ab62))
+* enhance PR template with commit and context sections ([27beade](https://github.com/hwakabh/semantic-issue-action/commit/27beadec4463f2359c34af9da6ad61089d7cde13))
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([bbf5a2f](https://github.com/hwakabh/semantic-issue-action/commit/bbf5a2fea273a3479b7096c275ff9180f8ab822a))
+* **deps:** update all non-major dependencies ([d433c6a](https://github.com/hwakabh/semantic-issue-action/commit/d433c6aa87ade4d7cd02b5a2757385f8cf2da39e))
+* **deps:** update all non-major dependencies ([0666802](https://github.com/hwakabh/semantic-issue-action/commit/0666802d88f54720412fcc1f7c0519f735937761))
+* **deps:** update node.js to v24 ([92ba512](https://github.com/hwakabh/semantic-issue-action/commit/92ba512209aae65e64e166a12daa85781a7d63b6))
+
 ## [0.6.0](https://github.com/hwakabh/semantic-issue-action/compare/v0.5.12...v0.6.0) (2025-10-21)
 
 
