@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.2](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.1...v0.6.2) (2025-11-24)
+
+
+### Other Changes
+
+* **deps:** update actions/checkout action to v6 ([22b8420](https://github.com/hwakabh/semantic-issue-action/commit/22b8420d4563f50e30e0e6e4649ba3b02d74f626))
+* **deps:** update actions/checkout action to v6 ([0d83bdd](https://github.com/hwakabh/semantic-issue-action/commit/0d83bdddecbd389eaf00ab71948c2e0d828b7bdb))
+
 ## [0.6.1](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.0...v0.6.1) (2025-11-17)
 
 
