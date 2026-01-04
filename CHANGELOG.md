@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.3](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.2...v0.6.3) (2026-01-04)
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([ba8c81a](https://github.com/hwakabh/semantic-issue-action/commit/ba8c81a01983b78eb76532b5a34ad2f82e4ae6db))
+* **deps:** update dependency @actions/core to v2 ([e3a5017](https://github.com/hwakabh/semantic-issue-action/commit/e3a5017a0d165f5c739c76e93424e8c941721c92))
+* **deps:** update dependency @actions/core to v2 ([4518d39](https://github.com/hwakabh/semantic-issue-action/commit/4518d39a8f4d0c10610ec45c4ab0865af012c098))
+
 ## [0.6.2](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.1...v0.6.2) (2025-11-24)
 
 
