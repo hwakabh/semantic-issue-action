@@ -13,12 +13,12 @@
   "author": "hwakabh",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^2.0.1",
+    "@actions/core": "^2.0.2",
     "@actions/github": "^6.0.1",
     "@conventional-commits/parser": "^0.4.1"
   },
   "devDependencies": {
-    "@types/node": "^24.10.4",
+    "@types/node": "^24.10.7",
     "@vercel/ncc": "^0.38.4",
     "typescript": "^5.9.3"
   }
