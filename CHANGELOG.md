@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.6](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.5...v0.6.6) (2026-02-09)
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([604445d](https://github.com/hwakabh/semantic-issue-action/commit/604445dc16aec0c55bebd2e286343bb66d34e4b9))
+* **deps:** update dependency @actions/core to v3 ([3f6b236](https://github.com/hwakabh/semantic-issue-action/commit/3f6b2364363a06a96edbab1572cd078c2fa9aa2e))
+* **deps:** update dependency @actions/core to v3 ([bc83dd4](https://github.com/hwakabh/semantic-issue-action/commit/bc83dd49c848a0058d61a6b1db6e01d96e17515f))
+* **deps:** update dependency @actions/github to v9 ([2c7040a](https://github.com/hwakabh/semantic-issue-action/commit/2c7040aff525f560f6f9a171890851ee09ebd62e))
+* **deps:** update dependency @actions/github to v9 ([70f0ee2](https://github.com/hwakabh/semantic-issue-action/commit/70f0ee2744c8a0c0b3d2022d76c1a45cb7df3bea))
+* **deps:** update dependency @types/node to ^24.10.12 ([825a5cb](https://github.com/hwakabh/semantic-issue-action/commit/825a5cbc643bd2aced36f5eb9f5182b21a8588ce))
+* **deps:** update dependency @types/node to ^24.10.12 ([f5b2240](https://github.com/hwakabh/semantic-issue-action/commit/f5b2240767391a0749d0f4bf77f2f62d36b90ee5))
+
 ## [0.6.5](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.4...v0.6.5) (2026-01-24)
 
 
