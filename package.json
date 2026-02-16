@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "24.13.0"
+    "node": "24.13.1"
   },
   "author": "hwakabh",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "@conventional-commits/parser": "^0.4.1"
   },
   "devDependencies": {
-    "@types/node": "^24.10.12",
+    "@types/node": "^24.10.13",
     "@vercel/ncc": "^0.38.4",
     "typescript": "^5.9.3"
   }
