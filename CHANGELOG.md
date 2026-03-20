@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.8](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.7...v0.6.8) (2026-03-20)
+
+
+### Other Changes
+
+* **deps:** bump undici in the npm_and_yarn group across 1 directory ([20a6f9c](https://github.com/hwakabh/semantic-issue-action/commit/20a6f9cf68e696f2ada84fff161bb09351d647e8))
+* **deps:** update dependency @types/node to ^24.12.0 ([8cb9ab7](https://github.com/hwakabh/semantic-issue-action/commit/8cb9ab7ae3e89dc56f5f569590731e03fee56c6f))
+
 ## [0.6.7](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.6...v0.6.7) (2026-03-05)
 
 
