@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.9](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.8...v0.6.9) (2026-07-29)
+
+
+### Other Changes
+
+* **deps:** update all non-major dependencies ([12b99b9](https://github.com/hwakabh/semantic-issue-action/commit/12b99b9f007ddb857a245ef5a66193e86e406177))
+* **deps:** update googleapis/release-please-action action to v5 ([57af39b](https://github.com/hwakabh/semantic-issue-action/commit/57af39b922bda20c89f85f28bf5470c97a3f6f1c))
+
 ## [0.6.8](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.7...v0.6.8) (2026-03-20)
 
 
