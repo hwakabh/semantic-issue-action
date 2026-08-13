@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.6.9](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.8...v0.6.9) (2026-08-13)
+
+
+### Other Changes
+
+* **deps:** bump undici in the npm_and_yarn group across 1 directory ([#115](https://github.com/hwakabh/semantic-issue-action/issues/115)) ([689d462](https://github.com/hwakabh/semantic-issue-action/commit/689d462cf5eb6d3e75086d90219526b702c80f65))
+* **deps:** update actions/checkout action to v7 ([fc8f7d6](https://github.com/hwakabh/semantic-issue-action/commit/fc8f7d6cd611eb6a7e9d74cdbf81a2884b1c3c7e))
+* **deps:** update actions/labeler action to v7 ([377348b](https://github.com/hwakabh/semantic-issue-action/commit/377348b4845c3ea174c6a96e2ab1c21eb83fb595))
+* **deps:** update actions/labeler action to v7 ([40b6959](https://github.com/hwakabh/semantic-issue-action/commit/40b6959686f94070b1b2b9058b6265d7fa8b389a))
+* **deps:** update actions/stale action to v11 ([#120](https://github.com/hwakabh/semantic-issue-action/issues/120)) ([6fb27e4](https://github.com/hwakabh/semantic-issue-action/commit/6fb27e4b216381cc50403c6d86b5e5d6d3d976b5))
+* **deps:** update all non-major dependencies ([fe85a83](https://github.com/hwakabh/semantic-issue-action/commit/fe85a834cb17ec836941aac841f873cac2b741a0))
+* **deps:** update all non-major dependencies ([12b99b9](https://github.com/hwakabh/semantic-issue-action/commit/12b99b9f007ddb857a245ef5a66193e86e406177))
+* **deps:** update dependency typescript to v7 ([dda3f87](https://github.com/hwakabh/semantic-issue-action/commit/dda3f87e68349dd9933448856922057884d1860d))
+* **deps:** update googleapis/release-please-action action to v5 ([57af39b](https://github.com/hwakabh/semantic-issue-action/commit/57af39b922bda20c89f85f28bf5470c97a3f6f1c))
+
 ## [0.6.8](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.7...v0.6.8) (2026-03-20)
 
 
