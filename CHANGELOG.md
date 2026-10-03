@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.10](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.9...v0.6.10) (2026-10-03)
+
+
+### Other Changes
+
+* **deps:** bump undici ([#123](https://github.com/hwakabh/semantic-issue-action/issues/123)) ([b01200b](https://github.com/hwakabh/semantic-issue-action/commit/b01200bca3fc3b7c116c2ab49716e0fb2518f5e7))
+* **deps:** update all non-major dependencies ([#121](https://github.com/hwakabh/semantic-issue-action/issues/121)) ([41b03c6](https://github.com/hwakabh/semantic-issue-action/commit/41b03c6c5424ee2a5c10e95bc15d413e6e42bd8c))
+* **deps:** update dependency ubuntu to v26 ([#122](https://github.com/hwakabh/semantic-issue-action/issues/122)) ([2f9856f](https://github.com/hwakabh/semantic-issue-action/commit/2f9856f6d9cbbc18f9a8bdf554c087e5878984ae))
+
 ## [0.6.9](https://github.com/hwakabh/semantic-issue-action/compare/v0.6.8...v0.6.9) (2026-08-13)
 
 
